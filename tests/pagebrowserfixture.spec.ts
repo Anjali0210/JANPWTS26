@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.skip('login page validation', async function ({page}) { 
+test('login page validation', async function ({page}) { 
   await page.goto("https://playwright.dev/");
   await page.getByRole('link',{name: 'Get started'}).click();
   await expect(page.getByRole('heading',{name:'Installation'})).toBeVisible();

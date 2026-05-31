@@ -1,0 +1,18 @@
+[
+  'Upload Files',
+  'Static Web Table',
+  'Dynamic Web Table',
+  'Pagination Web Table',
+  'Tabs',
+  'Dynamic Button',
+  'Alerts & Popups',
+  'Mouse Hover',
+  'Double Click',
+  'Drag and Drop',
+  'Slider',
+  'SVG Elements',
+  'Scrolling DropDown',
+  'Labels And Links',
+  'Form',
+  'ShadowDOM'
+]

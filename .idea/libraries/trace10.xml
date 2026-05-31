@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="trace10">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/test-results/pagebrowserfixture-browser-fixture-chromium/trace.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

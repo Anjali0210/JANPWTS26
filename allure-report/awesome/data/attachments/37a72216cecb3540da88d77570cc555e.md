@@ -1,0 +1,164 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: uibasics.spec.ts >> Static dropdown
+- Location: tests/uibasics.spec.ts:37:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link [ref=e4] [cursor=pointer]:
+      - /url: https://demoqa.com
+      - img [ref=e5]
+  - generic [ref=e8]:
+    - generic [ref=e11]:
+      - generic [ref=e14] [cursor=pointer]:
+        - generic [ref=e15]:
+          - img [ref=e17]
+          - text: Elements
+        - img [ref=e22]
+      - generic [ref=e26] [cursor=pointer]:
+        - generic [ref=e27]:
+          - img [ref=e29]
+          - text: Forms
+        - img [ref=e35]
+      - generic [ref=e39] [cursor=pointer]:
+        - generic [ref=e40]:
+          - img [ref=e42]
+          - text: Alerts, Frame & Windows
+        - img [ref=e47]
+      - generic [ref=e49]:
+        - generic [ref=e51] [cursor=pointer]:
+          - generic [ref=e52]:
+            - img [ref=e54]
+            - text: Widgets
+          - img [ref=e60]
+        - list [ref=e63]:
+          - listitem [ref=e64] [cursor=pointer]:
+            - link "Accordian" [ref=e65]:
+              - /url: /accordian
+              - img [ref=e66]
+              - text: Accordian
+          - listitem [ref=e68] [cursor=pointer]:
+            - link "Auto Complete" [ref=e69]:
+              - /url: /auto-complete
+              - img [ref=e70]
+              - text: Auto Complete
+          - listitem [ref=e72] [cursor=pointer]:
+            - link "Date Picker" [ref=e73]:
+              - /url: /date-picker
+              - img [ref=e74]
+              - text: Date Picker
+          - listitem [ref=e76] [cursor=pointer]:
+            - link "Slider" [ref=e77]:
+              - /url: /slider
+              - img [ref=e78]
+              - text: Slider
+          - listitem [ref=e80] [cursor=pointer]:
+            - link "Progress Bar" [ref=e81]:
+              - /url: /progress-bar
+              - img [ref=e82]
+              - text: Progress Bar
+          - listitem [ref=e84] [cursor=pointer]:
+            - link "Tabs" [ref=e85]:
+              - /url: /tabs
+              - img [ref=e86]
+              - text: Tabs
+          - listitem [ref=e88] [cursor=pointer]:
+            - link "Tool Tips" [ref=e89]:
+              - /url: /tool-tips
+              - img [ref=e90]
+              - text: Tool Tips
+          - listitem [ref=e92] [cursor=pointer]:
+            - link "Menu" [ref=e93]:
+              - /url: /menu
+              - img [ref=e94]
+              - text: Menu
+          - listitem [ref=e96] [cursor=pointer]:
+            - link "Select Menu" [ref=e97]:
+              - /url: /select-menu
+              - img [ref=e98]
+              - text: Select Menu
+      - generic [ref=e102] [cursor=pointer]:
+        - generic [ref=e103]:
+          - img [ref=e105]
+          - text: Interactions
+        - img [ref=e110]
+      - generic [ref=e114] [cursor=pointer]:
+        - generic [ref=e115]:
+          - img [ref=e117]
+          - text: Book Store Application
+        - img [ref=e122]
+    - generic [ref=e125]:
+      - heading "Select Menu" [level=1] [ref=e126]
+      - generic [ref=e128]: Select Value
+      - generic [ref=e131]:
+        - log [ref=e133]
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - generic [ref=e136]: Select Option
+            - combobox [ref=e138]
+          - img [ref=e142]
+      - generic [ref=e145]: Select One
+      - generic [ref=e148]:
+        - log [ref=e150]
+        - generic [ref=e151]:
+          - generic [ref=e152]:
+            - generic [ref=e153]: Select Title
+            - combobox [ref=e155]
+          - img [ref=e159]
+      - generic [ref=e162]: Old Style Select Menu
+      - combobox [ref=e166]:
+        - option "Red" [selected]
+        - option "Blue"
+        - option "Green"
+        - option "Yellow"
+        - option "Purple"
+        - option "Black"
+        - option "White"
+        - option "Voilet"
+        - option "Indigo"
+        - option "Magenta"
+        - option "Aqua"
+      - generic [ref=e168]:
+        - paragraph [ref=e169]: Multiselect drop down
+        - generic [ref=e170]:
+          - log [ref=e172]
+          - generic [ref=e173]:
+            - generic [ref=e174]:
+              - generic [ref=e175]: Select...
+              - combobox [ref=e177]
+            - img [ref=e181]
+      - generic [ref=e184]:
+        - paragraph [ref=e185]: Standard multi select
+        - listbox [ref=e186]:
+          - option "Volvo" [selected] [ref=e187]
+          - option "Saab" [selected] [ref=e188]
+          - option "Opel" [ref=e189]
+          - option "Audi" [ref=e190]
+    - iframe [ref=e199]:
+      - generic [ref=f59e2]:
+        - link "Advertisement" [ref=f59e4] [cursor=pointer]:
+          - /url: https://ad.doubleclick.net/pcs/click?xai=AKAOjsvbfCFO5feTQPfvEWOmKbe8DvAUm9WJJlsANjV1s4GT1nY2hj24gYGFfAYDhQ2MPH8qe62toD8NkmD3mmHHqmK11c2jzVHTi98c2Hs_Sg8uhrpdQnN5KLTMTYrlN9f2ybpxSd06_1ElADTJQv99pAm9MedEzo2CG2xqatctryCaCdy7F7mQO9fLq-nNLWP6YcYQYWfksxB_MLq-JsK70DVgK8NfaXfXiTgk-AJWo9YcYqj8U9qA0flgwVBe30lTjFea5IJso6gaqzCNDDR8-Ynn9D1bCg3RwsdPPJ408WEC2GThxS3bgVz--PfB8wncDWmH4YnGl0ZABmIFAWV_vMrdDgayTDd2UiCwPCdSDUbv3oCwR4t_3_fJ6Cf3xM4GQir_NNTVX4NlrmrjN9z86yAevsjGCTtg-XQeAp7q6j6NmuC-IuJifVYCiH3_9EoOaSeWV8FeSfyW8HNXW38ZaTYVXE86efGle8O5NSdFFoBokH2W2SRIDuZ3VaqjYD0IVhAvl7AuqIK7SoGSHCyzoj4yAkv_tBi36ZVSlIwLGXha67NQJpkQuYLbIA5ZrbjhU4vlmb7kwCUP32RaoJPDcMzUxo97OplrIUWNu7Zh4Q7v076hjxW1pW13-V-dtObTSz4N6uhkPdmcc3FNeF2v8d5haZ4C-2oVZ5zYiX_rB7UUCWeOYR8juq35G2FMl97xdxDMCA-Xa2AUmIb437JCEq1wCbKUmfz7yBUCrUq5NAi4IeKvnYEk2XchTUJNdMo5-u3SIMWp11xQHqMYwJ1sptZKk5ECU7PJyPC1GjuknONzc0oyrAI6r-SZcAc606EiY6gSXsbiiU2LekbU5xCtXO9JspBvIZmIqoT3m-vCWiHgjQm52CQAC8wVt0LiW_p7tRquwf5SDeu9g9dkEU8ymebcv0voT-LWxpkhpxLjVTlB-06WkmCReB-yEiSi4k_lSkqZMI28q0stMzOtTJZCFZDWGZfREy2Oo8E9g0VvyihoVl4orOSEt_O9amw3N8kUfXKw-RIi4aqPru-eQ9yjGZ9oppF49SOyGjwSq1HWIlr5GDmi8T93-bgXZTG-l9T6wwgFz7UCZwGhB7Lpde0N6B3wLwcRNfi9zIkjCNETOKMFlPjsFRAxmoAhqhAwIKNHzuldxs3TzwmcbfvX5sU3sObGwlCPdMCNjHdT3k0duNVUNJqZnyiHgetr0l2YnfjyM4SDov4an-rEinL26Y2fHnhdOFSWR-jQbsg_AYgLXndA7UB79Xe5ArpX9nZ351ezr0Iq2zkOGiXGfQqP3Ys81F-3l0G4loLeedbq7mtUuQnbBMDafaCKB2YWr3Q1qBOWahtJQqqYtM8ujDey08YEz3SecLrnRSzRP4TpRmBOMRgEyviorBbL2tBgGsGSYNm0Ohic7N6tuKYfjRcyG7LazNmnCUlZsJOQc-SwipxY2XstDAgResnCR54dGK649EtkHCNhtvMs_Ev7XA9t8gkzDSECeEtS3LWeMNa0-UZJqIvzuzEZvugwQRDzN1rK3ghqSwmMTlEIig3A8Po9QC36px9kUyNZErFr1hfakkdJlK00it7D6fDiHnB1-srRe7sIVB3nQ6rXsr8vZiqiKN5kjgCmAlIojMBp2kD6H6VwbCSPG-nSyBYHDFIp4gkYA8cBoUInDDqHI922jDGjlg9dIMe30jprfYZnQ0r-rv3aByWfMGv1nbI8RXe3YvhZjwt97BESgBbqisW04lOMYzeDTIZ5bNIO-cDZediJYTeUMsAx6VMa73ti7F3eYyhsv7wABAmtI1hmtpSs7bzPtKdZVNhRuaXqvP6RW_EipKxGidCyxipD2qn3iWLwkwpNQ3oOMxjUwHiD0S9gp0g5C4ocg2Ty94RlXH_bNNlcKgG7k_TuIRz7VV0gJ0HM0nDYq1k9TtLfgHIPeIoo_OqYIDFfAun9hwRVSycajp4-iXk4WFM0jD0zVBRbZbwSR14Sg83UL9wklZvPDJVegwBgnFmvmHRCahwkN0btErW3EKv8zzE&sai=AMfl-YQRpbIMpjMYVSs05G-8PXIf6414RYrwsA64pRRGioU8_ZRtrWnYKrNp_v-KjzyPc9L8-s0xIvupl2ef3AjQb9RHjWkDk_qcDc50--7QBCn-z880sYzYMRdxaE-XyaluJmTXzxmexQYJ7xJt1FWeTpb59_ICS-b38TsRVEU1Y96vAZxJcFE_Pqy-iaubo6-C_87O-4Ln7VWYXm9rqWofYL5_7eUONvACmJXQG_-mQI9DmmugubTc_hX48wfcHoDzBw5HxJ9u-mlHBgr6bFsP7q-gvsDcfYU2aJIwQMbojIshqfQpN-VkdR7YPGx8M_wzEGZbhuE3QIyEYZo1eyVZHTYzuRafiQJKxXTpA7JiB44Bfs4dwUW4hNmzIgaIL9rJ-QnFkbPkYf9CLn-YN60R0f9LxhWjDmxtbfB3yvB0VykIj9OLdBhtD3WwLUSReuZGA5RxTT9lB15bIh1Bi30Ub9IhY6x41qX2WJXapi3siAA-TSosuGHCcTmCufJyKtvHu1rLgNvNMyS3RqDiWB2kwkqGzpRMrqT-abfdiCjvYV9uuedOcOtVByyIcqGNQY5CenXZKI6S4tb_HftqQEzOFYOimYDJBWLVrW-Y1Be_ThaSAI9nu733dEx1hi3fHcWCMdUuHrRXRuJDB3fiRAPBGggYVIzNKmXVu7sCBwToNrbkBi64JVXLIrEoYvY7UlWu7u4p_JWXicYu5x4wVCe6iGpEC76RjUM7GfPfCbEHCv3eUsY-Zq647vowdE0BVu1Nowm_-Xbt3Kk4sy0Xlzl76KjylXBcDCOHNozE2yKPj2oeL59UBGsUFqIkTrzgVj6Icmb91WrEGgPgEc6r2zMZ6ARoVrtuRGBe_z_xush4Ct63shO4AnoKTOU&sig=Cg0ArKJSzMkInraSQA4o&fbs_aeid=%5Bgw_fbsaeid%5D&crd=aHR0cHM6Ly9tYXJ1dGlzdXp1a2kuY29t&urlfix=1&adurl=http://www.marutisuzuki.com/arena/victoris%3Futm_source%3Ddv360_display%26utm_medium%3Dcpm_cin%26utm_campaign%3D23520189489_ao%26utm_content%3D721299021%26utm_placement%3Dhttps://demoqa.com/select-menu%26utm_site%3D343093677772%26dclid%3D%25edclid!%26gad_source%3D7%26gad_campaignid%3D23520189489
+          - img "Advertisement" [ref=f59e5]
+        - generic [ref=f59e6]:
+          - generic:
+            - img [ref=f59e10] [cursor=pointer]
+            - button [ref=f59e12] [cursor=pointer]:
+              - img [ref=f59e13]
+  - contentinfo [ref=e200]:
+    - generic [ref=e201]: © 2013-2026 TOOLSQA.COM | ALL RIGHTS RESERVED.
+```

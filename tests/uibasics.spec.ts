@@ -67,7 +67,7 @@ await page.goto("https://demo.guru99.com/test/simple_context_menu")
 })
 
 
-test.only('handling alerts', async ({page})=>{
+test('handling alerts', async ({page})=>{
 
     await page.goto("https://demoqa.com/alerts")
 

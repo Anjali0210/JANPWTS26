@@ -1,0 +1,186 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: uibasics.spec.ts >> Static dropdown
+- Location: tests/uibasics.spec.ts:37:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link [ref=e4] [cursor=pointer]:
+      - /url: https://demoqa.com
+      - img [ref=e5]
+  - generic [ref=e8]:
+    - generic [ref=e11]:
+      - generic [ref=e14] [cursor=pointer]:
+        - generic [ref=e15]:
+          - img [ref=e17]
+          - text: Elements
+        - img [ref=e22]
+      - generic [ref=e26] [cursor=pointer]:
+        - generic [ref=e27]:
+          - img [ref=e29]
+          - text: Forms
+        - img [ref=e35]
+      - generic [ref=e39] [cursor=pointer]:
+        - generic [ref=e40]:
+          - img [ref=e42]
+          - text: Alerts, Frame & Windows
+        - img [ref=e47]
+      - generic [ref=e49]:
+        - generic [ref=e51] [cursor=pointer]:
+          - generic [ref=e52]:
+            - img [ref=e54]
+            - text: Widgets
+          - img [ref=e60]
+        - list [ref=e63]:
+          - listitem [ref=e64] [cursor=pointer]:
+            - link "Accordian" [ref=e65]:
+              - /url: /accordian
+              - img [ref=e66]
+              - text: Accordian
+          - listitem [ref=e68] [cursor=pointer]:
+            - link "Auto Complete" [ref=e69]:
+              - /url: /auto-complete
+              - img [ref=e70]
+              - text: Auto Complete
+          - listitem [ref=e72] [cursor=pointer]:
+            - link "Date Picker" [ref=e73]:
+              - /url: /date-picker
+              - img [ref=e74]
+              - text: Date Picker
+          - listitem [ref=e76] [cursor=pointer]:
+            - link "Slider" [ref=e77]:
+              - /url: /slider
+              - img [ref=e78]
+              - text: Slider
+          - listitem [ref=e80] [cursor=pointer]:
+            - link "Progress Bar" [ref=e81]:
+              - /url: /progress-bar
+              - img [ref=e82]
+              - text: Progress Bar
+          - listitem [ref=e84] [cursor=pointer]:
+            - link "Tabs" [ref=e85]:
+              - /url: /tabs
+              - img [ref=e86]
+              - text: Tabs
+          - listitem [ref=e88] [cursor=pointer]:
+            - link "Tool Tips" [ref=e89]:
+              - /url: /tool-tips
+              - img [ref=e90]
+              - text: Tool Tips
+          - listitem [ref=e92] [cursor=pointer]:
+            - link "Menu" [ref=e93]:
+              - /url: /menu
+              - img [ref=e94]
+              - text: Menu
+          - listitem [ref=e96] [cursor=pointer]:
+            - link "Select Menu" [ref=e97]:
+              - /url: /select-menu
+              - img [ref=e98]
+              - text: Select Menu
+      - generic [ref=e102] [cursor=pointer]:
+        - generic [ref=e103]:
+          - img [ref=e105]
+          - text: Interactions
+        - img [ref=e110]
+      - generic [ref=e114] [cursor=pointer]:
+        - generic [ref=e115]:
+          - img [ref=e117]
+          - text: Book Store Application
+        - img [ref=e122]
+    - generic [ref=e124]:
+      - generic [ref=e125]:
+        - heading "Select Menu" [level=1] [ref=e126]
+        - generic [ref=e128]: Select Value
+        - generic [ref=e131]:
+          - log [ref=e133]
+          - generic [ref=e134]:
+            - generic [ref=e135]:
+              - generic [ref=e136]: Select Option
+              - combobox [ref=e138]
+            - img [ref=e142]
+        - generic [ref=e145]: Select One
+        - generic [ref=e148]:
+          - log [ref=e150]
+          - generic [ref=e151]:
+            - generic [ref=e152]:
+              - generic [ref=e153]: Select Title
+              - combobox [ref=e155]
+            - img [ref=e159]
+        - generic [ref=e162]: Old Style Select Menu
+        - combobox [ref=e166]:
+          - option "Red" [selected]
+          - option "Blue"
+          - option "Green"
+          - option "Yellow"
+          - option "Purple"
+          - option "Black"
+          - option "White"
+          - option "Voilet"
+          - option "Indigo"
+          - option "Magenta"
+          - option "Aqua"
+        - generic [ref=e168]:
+          - paragraph [ref=e169]: Multiselect drop down
+          - generic [ref=e170]:
+            - log [ref=e172]
+            - generic [ref=e173]:
+              - generic [ref=e174]:
+                - generic [ref=e175]: Select...
+                - combobox [ref=e177]
+              - img [ref=e181]
+        - generic [ref=e184]:
+          - paragraph [ref=e185]: Standard multi select
+          - listbox [ref=e186]:
+            - option "Volvo" [selected] [ref=e187]
+            - option "Saab" [selected] [ref=e188]
+            - option "Opel" [ref=e189]
+            - option "Audi" [ref=e190]
+      - iframe [ref=e194]:
+        - generic [ref=f30e2]:
+          - link "Advertisement" [ref=f30e4] [cursor=pointer]:
+            - /url: https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstMZJv5ZRck9htVD-nL11sh2GdpOl6ZFDkj2MCgPVCP_PtV9BED-WhyVH031DB3f0oc3FMHn7NTlBx3n8v9Y_qDFAN8qy2rW-MWKZvjJT0Rn0OCVGA4cenpKHVpaRmLKVhbWC0rCPYvttlNXivgRE3f4aRdTRLP6vV8AtQtS9tcyV-oZSc21YS7YQLR9PAkAJU7A3QvdRQQUi4UcsqhVxk_i2zJ0O2cxn2HPUpcDm_58Rmht9XMc9JeG-VFSOsHKmiduvTbs4jUdayboPcRJd-UYSDN6lwPN5R4OLB57mpIckgwyqXJ7AZH0jrJYWu8-18CV3NDIJVKCOr8tuMYKDh_aRH6sy3GhTn2vjlF58ZJtzCEgX7_sa0qF5BEZcM5ytR8t-F337kXWsFnUogMVLOt2sTwNxb_bjx0CKIEExUbFkNaqW69m_TFAkDj5VYEM3-fS667inzSsr5gC4DWrWsmbCuSoiERFJ0gwV2c_8vRqEr-gNjG-9mZH5bqgD7PCa8Ns8ZSz_r9JRFQYr8YtHfgULUXctdlvh7URwbG0OBbs4JnK1KzRHdX4Xd9kYyQ3fYBVBS3oqXh_-MVuui0jY2lI96Dv3lGecS5G0asKba7XADxAEGN0VvkifMUuG56Xn0ock5eVWn1tXFbBPQuJ-WbAlZSAXbh3xzrc802eCwfXn4JAcw36kC2ZUSykpr9IewVqTlw2CbQj1fysGzR6Yurj0ZNqAip21fwBxw4ZBgXsjXFIsZko3SGMs-Cjitd-yZmJxxTx5FJp7D-fdo6gHj_ItzD-ThzxgSoDjLGQX91qayM050N4hPs1xO6Am5aW0lUil5ja2lEE9Iln60IiKbwMcI39vXE0XD7sz7fh879h1Yvfve0-OjwICJffUEvSR8tDhSm2n6prjEzDwXR5YthsA4n6nvJSQeGefEzA8jr6gOgh2CqRNs-jJdJta-fO92lUFER8MVnCYGZVEYxWwxxxOJphi5YBOaCbYgzss-kBOrstQHzGAF_qf8-ibMTBtl_TVBB5ltVlEPU0N5DWXK1cO9zmp9Smk3so2ZFb-ZpK_iAqjy49WRlbD5PZxpFuebodLWo_96ynvAGKngR9gHpWpSQ2THBZzb_pi0z8lyn9IPcBRCqI5gzsKOFxEZ0oZb0FMlcYuBZRrXaAckDoTErwimfG3EgFp1JVrH2lEDQ_1qTGHwfxWelglPJFudIvgAHS7ayJA0dO8FDVtnQffQRfW_jqzzN1ehh69pbgGoT2rPPJIOdpow56QypYIDLLI3UTYINr_V-rERyhGCEZxeCDwbM9Z3pUPA2wYpJRee0pUHkUzB1AGz5wiB7FA4VP3sFMLE3vP5WJoAqFJNVoHBmNCPq7SsHOIRno5dFGSVamm53JzMJbYolhDcSnBxAIcWTbW3_0XA4in52XvzHpLY7S-Mt4sOI9pjeRTc4PwxxzTetd3BYT1jJCBoifC3d1yGo0nOpqYZVbRHWG1gY9DLYFs1eVc0hCineQtYCV45YjZzYHhFMj1ZQu8jGLEbw8hkwcveXuudSzB0oGgmKfnptgLxtjtsc5EdDeQ_nI2bFIVUrbZGRxYWVXffrp6wTWr-2Qz4fo_2lOhVUB8JIJ2VpJFF5WHbwtMonoLtgC9Hi1SYRl3tX76mZRetjJ-M8CFNY9DCjS8u3uXC7l3X9mnWHRO0S2SxQ1s-gvIGxp4Oj3WDR_QdoF8z0UqUp-UHIofWv0FMFxh9pmWISePC8Z5bdd3rY6nAZpSqHgV8YBIiDrD1XpnItRBd9HmuoGy_TXPX8e4M8miR6GuTSewLXx3WUsaNNDuxyaTo6ITKuPk8vb6gaTqteu8WzVsT85LaBpvRJ2wJXkQT3xEv9S4d4oLngeK5H1mdrmxjzmVzH1LkA_am47qDuITZYdYQYCsJnims&sai=AMfl-YTJI0Qikt_YQA1_k_DDMt_e7r45kNq2ziJN0ZrIGc5ipjy7hjQZg6D1zLV6yi3ngziUN5J5Ey73-k8buc0XB0zlrmhUVUC8LJNdodkczr8kIoa3lyZFsMcjy3ZE0M7K9ZRIwdOIGl-NIBuUKU5eio4dmyFP4MjEjDCNmFKyAYGyeEUNfr1zUOMNUa2xTjeUpoRLJ8SMhCl-hYSOFMNeMNdvHUnjeoz2J_PD_P-vwVM7iNdbcpQHgYepJbwh84NfXKJlEEkbUnnSe-GctU2gSh_YOKrsA8SIzmEzNgYCNSvnqlUi3NKFvj5OfhI7w3ZVUrwawg8b0tLfWKGDR_UEFJ79UYZasP-mdIrdFzegKCOHQtNFM7xNIAW0gS-y6URQTuPdkX6wEmruilEMYORlIvJGP_unlmiJqd-nTmhP_v9b_stSByB0s9E33DU6FYEUJyRwfjPWZvjj9Qk0nkI8fG_6V9GybGwQ7G6v6BQLFpvtm_SNIVlbn_tT1-wBviyFk4bEgeyVdPHD351PqYF8uL4AvRY7y7q5n5yMPNSzMwzLsauBlKK-BvWL04w_aO1d_1WKSvkP8LUnZmkgjiKbowBYCKRNGo2Ox_T9AqHhUQiLLv6C4PNW1X745SF1YdOkE6W-9EfgD0TqkTW-EuTJu7Kn6HGemRZFsMNJq4vlc5lhT2amMUryusNR5IsEhCKMBv2SGtlGG_wmcCKJMlAoi1gaQGyOd3077tUPcxQRoP-wqMu1ggyrTOxgo6GcanUt-a3f8YL5RHmlPI9K-_ZT5fDKRfNfAy-hKFJTIqw4nEwGfH8EfPi-Y-0h4lAnozwQPg7StAC-QqCiN_BqmhjiI-cJyk4EQWE&sig=Cg0ArKJSzACWQEjtEwft&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://bioderma.naosindia.in/search%3Fq%3Dxdefense%26utm_source%3Ddv360%26utm_medium%3Dpaid%26utm_campaign%3Din_bio_dv360_all_product_photoderm_x-defense_awareness_display%26utm_content%3Dnative_local_xdefense_inmarket-custom-intent%26dclid%3D%25edclid!%26gad_source%3D7%26gad_campaignid%3D23825064657
+            - img "Advertisement" [ref=f30e5]
+          - generic [ref=f30e6]:
+            - generic:
+              - img [ref=f30e10] [cursor=pointer]
+              - button [ref=f30e12] [cursor=pointer]:
+                - img [ref=f30e13]
+    - generic [ref=e199]:
+      - iframe [ref=e202]:
+        - generic [ref=f24e2]:
+          - link "Advertisement" [ref=f24e4] [cursor=pointer]:
+            - /url: https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstxfKoFU2uYtn_AmEBa_D9u-eNgXNzLf_QZSkb5KcRldMlu5EGEspTaHosEo7xHxLtU3iu6fzxXSXO-1G4jdU2Nqz7hFiZHBEF1uOQMMbwXpPUnqDcoQe0oO6aluL1dWeb2QsHTBUvLwuWCgRdNC9XaEm-DqvbdOK-QhwJXZ3uSLed3M2SknFa-LpdQWdP5ZX6tyvagj48CUGLXRF_PlYbXnI3UeJsCLB9tvXM7CePjHC9eTdrhJZZ0f7HNASDzR8kF_tgs92OErM7TymLTAY81IbRYqz_dxe6huYK8GNcHqdsDCPa5AiLMpt8mwSY-wYit-kBsdVHpxmixvEYTj8TMZJBZj-NRlqYtXmoicWvypmwo2cqBAX4-bSaD-YL9SrJhoAnhonRzmySf2v5htqyJOgFXqLg8YmGHKRnjyGQD6GxDpc_-y2Erm30_lwRHfcRvl3HH6alWixNtaLhP26EACeKcvx_Tf6_y590XiLDK8MFhq0WPetai_0LaOar06CKA0Bqgfh1rlxHmuYtJ7CqivKIMDhsesDDj87G_fdoEeOwKNCfs6SR6xxC5TbgvXa7nZgXyZPAEYv6KMBfc0WExDHMLGCr_d7C1l0FnHAucmDR_mgqzFy8AyWw5Pz_0Nl5dSJDlav4qUjzayBxVbAQMxB71dE8QJ0B1W9sfhnyVWnfrIx7T4lzlhbLxCoWI22pjyLGYDRo2RSDWx4xxlrFjAYiAmZguDmd8GwYSkz9qxE0AtqB0XCKaTYj_z8pCZJVbqcYu7sOSU29Wm_PqF2RQpu7M52dgNo9JvXht6BnY9GgWV98DYMjYD1Dl8iYYsJhQA9XhkOPjQ7WzmIgcu5h3Hd7MtVOqJjcE7yOo4bQIu86caZCTQPZ3h0uGKeFhaNGSjSJm89ga5B5pGNPs4-4Rp_eg_fsFcBfP8T0Nvr5mc-4z-KfprLdpRfzIpzxliV2hoIRy5Hk5JT7F-XHz-iYEEc-SAgN7YJTEBmuVk12cZtp-UJDMzjOTNFh0c191E95Wm44lBqM-DjLziqq6F2_GmKV60t4HvCso3JcaU0z0DTt-MjmqdeL3cyDisP8OdXGzXX--VRg7Nez2EZba8HzFS400o4aUGCz2mKOqbmaKqbDydsDlOiABaycEFT58SVq64e98z7PqU0lfLvncHAYZpwftOt0sBta4Vxs1abtOSOO2bW34-BilV7AxpFkcjCjF2TD9loAU_BohpuE8O8ooSdbU-R94Q2hbd4l-2LvQHWr5-C-9lioeX0ev9mvMIxGiLjpkDiks4GEmbaI9YKxSTEkx89N2-Up4tAa68AoXkIImJgyqhUmaqyC7YCg7rBXgLqDwB8a875D3PzyxLxQOicG7peO1nF8s0ZcL6ln23SV1XuG0mFIw642qPMOGOinnMp36ZLsae5vqZHgOoPGNugG_9r50pWRIVA4D2ZwFx-xQ0MO9qYSQYxoj4gazfulmifB6LlDMEORAcLTxMBJbg3U9WjulrPXGHNJWjlpK5Q3hOzu-HG-0mvYAhefA8FAIv_iblzC7WWb37xqI5vBCPCO5Ssc1t81k3alYC9VjiOUODrXC6XftUupy9Oew2WB7a6l4Q_XrMETLgDovVF7yK5bluBIr77-o_cPLcyhvehHnhalsu9Uv180euLDsHyZBt34w3551uZMS3LyHXMSCOPT1EpOZL5yh_Gd9N4IQSlPDOCG8xRA8liwo6lpl3jr65yCKoEIpDTTUUOW3LeajeGCOvknuCCHBlIR7e0ftcF-So5TPIfQd1UOc59VTH03eSJrT3dcQGRU8JbbmJZUsB24Iu-_qQaSQAvp2Xzm8BeGgXVsy60vx5kqs5Z9egYsSzroQLsbIRQn_IWkGcbLQ4TAZCx0OIWVAUJ8TzWwLMOEs_cP2K7zxcAnzUS1kM9MAegAS-PifI3fGeNCpj3A6c6GFxSu33L8-Tg&sai=AMfl-YTB4PCLnETAt8PCe0t8BDdb_QICR0kIbeyYGlIpzhGqgIt5_yELemtWMKtr8wwC3WL5gm1SvNrIM_kuMowyctka0C9eMq9WIpQV6rh5y61R_B5Z-PB6Vputif8uWLiDJPTmmPqsht-ILXgdaGQNKrXL6uAuH609TykvIKjIddIhQvLszkeeUy3_jle47WyJ9LPhMQh107NpDpjd4MewF9KeIedYnejNtcb7USFO0O0e46gKtf2MgfRx4bkDUkACm5TRmVpzJzLhlGHs0wXwuhsxcTP3oTgGP0qvUZpYZ62gZUrR_JPhWce73472tSFgfuQeTrZdNV_gKkN9zhTH6n8EAxjO_kmbRit33AGTLZlw7jLwgNo8qejA7i6inpo5W96Sw1wQ87ktYkm_50KVPcm__qNeTlkubjOheNPYHv8-AvshgTAO2pjlr1U7Ud7I0XaYH2IuK0kgTN_5BcTwslxZYpkLY1lauPMi5kcg2Uox_Lr7bVY_O_d0hWUd1YYl2ThiwpewX4hsMkP4_DhwRG0HnsRHzcRleRNC8TanlSdWD09PslnsqrI0INmgij93Ek7nQk6hnyFPsX6HR6G70uSJCMaJMDlIoWvh3i4EnuzN0QXPmXap12tnHjxVoTGBfDUo1vGmFMfqFgvdekgi5fXacK8995X_9x-PJx_d_tTtCUsfmLh-G--NlxZ_tNV29md2FfCN8EoyCyUHsYbQ8ImCWg9B0cqCyq-_nDn56kg929jP5NL1kdm6G9rLi2ys_NN3mMsCp_oVvzqRiyJm6pyNK8i5wDTpQRSiqileIoUq3XCkkMTVmWFsXkqxY8fnPYY4tp2OtQhLCljPhw1USWwau-SiPH8&sig=Cg0ArKJSzBZrv4LP4Zvt&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://bioderma.naosindia.in/collections/photoderm%3Futm_source%3Ddv360%26utm_medium%3Dpaid%26utm_campaign%3Din_bio_dv360_all_always-on_photoderm_na_awareness_photodermp1-display%26utm_content%3Dnative_local_photoderm_inmarket-custom-intent%26dclid%3D%25edclid!%26gad_source%3D7%26gad_campaignid%3D23605415694
+            - img "Advertisement" [ref=f24e5]
+          - generic [ref=f24e6]:
+            - generic:
+              - img [ref=f24e10] [cursor=pointer]
+              - button [ref=f24e12] [cursor=pointer]:
+                - img [ref=f24e13]
+      - iframe [ref=e205]:
+        - generic [ref=f27e2]:
+          - link "Advertisement" [ref=f27e4] [cursor=pointer]:
+            - /url: https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsstsCETdIxlopgJ20Q4yTmedU5sfC815gICy7uhIR8sDSEeY80NTHGrwdecQJXcUDALtFHTz9S-gLMXY80QM6g2Ho7WcxIasa_oRx-espJZ_-aerzwagwGh3xHuzVG_a3gHkcRy33GDFnGkt8llbS7oDG7ILW9RWQhDMFVgy-W7XFIcXvThCl8PoH_YHol7XyVR90KYpJFTJZGKQCeGfDRMX3dAybj1nQCGEJ_90L3JCdoVL4QeiUR0IRrAdQqdolNKYmAKvhL1Y9DdQz-7jjV952j6-2b3OLR5xrTSaHz65vGSLZKIY0ppiiIiqAL_Ek4YA-MrHeJmvzDm6HESORkc9VklNkVx4twt82_2E-Fvhl89TFUpz7m3j7yua00-A5ajimO_gs69Jcb9nIhBoerTR4QdUlGRullMIQ-pttzqhkdBMWfgV2yezQgKjD68-16fs8FJFqI9CMPgnufBrIhyWDHBQDywDv13iiXPdhQEDMc9RWyahIm_KkNKQUXFTR4hgKQSgT6V8KqD_5qVA1JMeswuEPC7hDSGbXa9Zipx1bUqaEisXRh_X29JXFS-_EMJJE9LU3xKGPfj3lhhKKAdHvbVHtzVXsVH6UICR7iBM3Vd2--MPJCtqWESah8iJZAGgN6oDMNW2NRrz7sOLtardbllVipKS9J0-EJlQZ84_OJBVVKDx6Wk6iStjO9dcoF21khf6LtqCZzqjXrNjQNdGGNBC0qnTuL_xSBNoB8rhKUOZLOKkVZjvVvpYaZnkYlAiOPafqH6ZfuvT2T2tHU2tvC87BAGD3yuCGWqreQZqxmC1DkIc9KbLG7gjVSd99uXBBsQZkQcQuuojJ45z_fxDTvL2ZluyjRKgbP6rF-BWSjhIMYJKaUaR2mrzvsYZkE1zGsjyycr8Ins7wBvWVJY8geaU-GcWbEdVGwleoOuNown5AXFG77W-sDnp1RrYbK08BrHutVPu9BR92-Tw_Ov7JfU3O81nwClOr-jW00qSYH31a9yG9tMEssn7KXI6sge0Pe4CbQooChBQZj9tesBOHDT1LwkTk4IcLB-yekPkF-qESLN-GYfi2-a9NB5AyP3H95HSDFwNdyPjGguV1fxrjLE-JILtaBy78FQelMyuBlMwBGcQc0gQtHfbkeLX3lDXzk6sOfILyBCH7cxjbLtzpmSzL2ylL-o9j9gsxCFLbqQ3uGswuhjiHXqxGvPPYcUJJpaCSCuwSpgcEMftwKRAyp5WCQaqx3UQH39U7yyxhNLzQkk9pfnMU22mFlBT7SBw6l89IXYAcrOwdN0DHgYyu3u2cThJKE_FpHR0ZJAGUdqp6OGXRjop-ZKz2qveF-xNywS_Hp4CjP7yASqZGdU9gafGhAdJJBZKlU3fexklx5Cn_wX7QPcg7HntSxYjTWAFN7bottnBwT6PMX0CfoUYJdRch-qic5uMk-H0Id92uZb9NxV6kCIYbkwJUxd8wD2_SBPqYcxL9-NKr7h_wXQ2gCeQS_HP2f4vsDHeLapzNaeTdr7PU1A5sxr9FnoNYgmOjPqquXInCPe2lFkz1LnRQEkeizcLGi1_Rlca6RyR1QfyTL0H-L-TtTwLnh0ydP4pHXs_XYbIvY9nGhRpgJRqnHPRBEIMMFi9_nHDFKDlwFOs-iJvxBQzT2b8V9H4Q9zMDEnYRZEBjBdlCSTd0gRG4gWw_nQ9ZJRN5nJUdZOoPMHEOHDGTxjGXJ7oMJvtKu0_MHJgDqpWCCLt7cIMDxYNeeD3I8IEXledBu-bTw3taCX3PmHFSES3alism6lKkJ9040mEf6RcAkTky6tfSgJHP9TdlpDfZa7i0ke8Y049NdpqOsNN82-s1obiDU6d8KCF8g8-Xcp2dKCZKt-xbo1H4hoT_u-DO1dU811CxsyCtDCcbKqxUkwRJVXJAUT-DW-kGNSyiLl0wQuQiJ1t6lqRTRVtH64Ogl1C8w&sai=AMfl-YQeDY3vJpodr92Mp-wLsZZQgU0WcRoqniMPtOJ6UQ-CABjif3Mu_ejuvEjvQeAZz0xT51oWKd6d-y-XgKAOXF68JVkERoEOM_-3F5rtfRGuYY9nOI9-TjLSNOAKzv1RbNSg8wowDt44PCIlOWfVaZWtKqOYRm1Oan9CNb2xVcjMuzvpFwioMUFs8lJcW1s8FahDOQ-ap54l85PswoHrmMaS7EVRkm6srec0AlQe00SH9eYVnzEsNAV_3G2xZVDQMNjsoeMB-t9EBE4R3BlnIiqr3U-DS5qkiw2ZR2RFh3xQ__EeuNJFcQzmfmthXj48vUfs8Jhb4auD53L5pCQlKOI8NcbVQduXOGZKRlzvaeXBYPTQ-Lq0euB_l55bS7y14qp-l_B8cAX40cKswTipnyek12HQHqX2P6_bOANvbmtMpJrYZboMNtNIreCnGSuobZIU8S1cGO3W6uSsS8j7RPRUPQWVGtdtYeajlG45DW7PnEx_ThlBNn4Rlo4xuSGFfCYHaga6OOV0_C7FCtSGvzjSc-rq91NXwIhn_L_0kdf87W9DJKiSC6y51Bdafp-3Zb54iCBr_6HdtE-uKANgf9a0A779stDRTLUd6W7BqzfjUeX4zYKipoMOePPSinJ0zwEu-jJ5h4V22mAWtXyRq1LybszrFH0QyibSLAsknW6PGGblikS-dGzCHpBwfpbxkFmRLl8co7M6EDibDmbr_MkbNE94v4bKwjnzuV9fxBt2FpjwSLps1pSfMtJAYPk89OpfdUnYhHqCtloyvsf7_u6m6aJAfbsmFgbaJEl6CYYM84scipKoaTbywnt7JHIUF9o6xIh0ZAC3GpIkgCTgFiReYJ5e_GA&sig=Cg0ArKJSzIhYas_CmGPj&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://bioderma.naosindia.in/collections/photoderm%3Futm_source%3Ddv360%26utm_medium%3Dpaid%26utm_campaign%3Din_bio_dv360_all_always-on_photoderm_na_awareness_photodermp1-display%26utm_content%3Dnative_local_photoderm_inmarket-custom-intent%26dclid%3D%25edclid!%26gad_source%3D7%26gad_campaignid%3D23605415694
+            - img "Advertisement" [ref=f27e5]
+          - generic [ref=f27e6]:
+            - generic:
+              - img [ref=f27e10] [cursor=pointer]
+              - button [ref=f27e12] [cursor=pointer]:
+                - img [ref=f27e13]
+  - contentinfo [ref=e206]:
+    - generic [ref=e207]: © 2013-2026 TOOLSQA.COM | ALL RIGHTS RESERVED.
+```
